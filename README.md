@@ -57,6 +57,17 @@ This tool was developed for two main reasons:
 
 - 📦 **Installer**: Develop an installer to automate the distribution and installation process.
 
+## 🛠 Troubleshooting
+
+If the icons are not displayed correctly, follow these steps:
+
+1. Check the registry key: 
+   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers`
+   
+2. Verify the presence of keys related to `GitStatusOverlay`. If they are present, check how many keys are listed. Windows has a limitation of 15 overlay icons. 
+
+3. If there are more than 15 keys, you will need to remove some to allow for proper functionality.
+
 ## 🙏 Acknowledgments
 
 This project was made possible by the following libraries:
